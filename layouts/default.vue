@@ -5,11 +5,10 @@
       app
       color="white"
       flat
-      
     >
-
+    <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-md-none"></v-app-bar-nav-icon>
     <v-img
-        class="d-sm-none"
+        class="d-md-none centro"
         contain
         lazy-src="logoLEA.png"
         max-height="50"
@@ -18,15 +17,29 @@
     ></v-img>
 
     <v-img
-        class="imagen d-none d-sm-block"
+        class="imagen d-none d-md-block"
         contain
         lazy-src="logoLEA.png"
         max-height="150"
         max-width="150"
         src="logoLEA.png"
     ></v-img>
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      left
+      app
+      temporary
+    >
+        <div class="linksSidebar">
 
-    <NuxtLink v-for="link in links" class="d-none d-sm-block"
+          <NuxtLink v-for="link in links" class=""
+        :key="link.link" :to="link.link" v-bind:style="{color: link.color}">{{ link.nombre }}</NuxtLink>      
+        </div>
+      
+    </v-navigation-drawer>
+   
+    <NuxtLink v-for="link in links" class="d-none d-md-block"
         :key="link.link" :to="link.link" v-bind:style="{color: link.color}">{{ link.nombre }}</NuxtLink>          
 
     </v-app-bar>
@@ -38,12 +51,15 @@
         </v-row>
       </v-container>
     </v-main>
+    
+
   </v-app>
 </template>
 
 <script>
   export default {
     data: () => ({
+        drawer: false,
       isActive: false,
       links: [
         {
@@ -90,8 +106,23 @@ a {
     text-decoration: none;
 }
 
+.centro {
+    display: contents;
+}
+
+.linksSidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
 .v-toolbar__content {
     justify-content: space-evenly;
+}
+
+.v-image__image--preload {
+    filter: none;
 }
 
 .imagen {
