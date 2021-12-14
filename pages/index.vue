@@ -57,7 +57,13 @@ export default {
 }
 </script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-style: sans-serif;
+    font-weight: 700;
+    font-display: swap;
+    src: url('~assets/fonts/NunitoSans-ExtraLight.ttf') format('truetype');
+  }
 </style>
 <style>
 h2 {
