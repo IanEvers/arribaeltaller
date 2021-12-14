@@ -6,12 +6,12 @@
         <v-sheet
             rounded="lg"
         >
-            <h2 class="chicos">Los Chicxs dicen</h2>
+            <h2 class="chicos lila">Los Chicxs dicen</h2>
             <v-card 
                 v-for="chico in chicos"
                 :key="chico.titulo"
             >
-               <h2> {{ chico.titulo }}</h2>
+               <h2 class="chicos"> {{ chico.titulo }}</h2>
                <p> {{ chico.descripcion }}</p>
             </v-card>
         </v-sheet>
@@ -55,8 +55,11 @@ export default {
 <style scoped>
 
 .chicos {
+    padding: 1rem;
+}
+
+.lila {
     color: #8B6CA1;
-    padding: 2rem;
 }
 
 .losChicos {

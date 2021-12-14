@@ -18,8 +18,9 @@
             <v-tabs
                 v-model="tab"
                 background-color="transparent"
-                color="basil"
+                center-active
                 grow
+                show-arrows
             >
                 <v-tab
                     v-for="actividad in actividades"
