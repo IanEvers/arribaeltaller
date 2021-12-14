@@ -6,7 +6,7 @@
         <v-sheet
             rounded="lg"
         >
-            <h2 class="chicos lila">Los Chicxs dicen</h2>
+            <h2 class=" lila">Los Chicxs dicen</h2>
             <v-card 
                 v-for="chico in chicos"
                 :key="chico.titulo"
@@ -56,6 +56,7 @@ export default {
 
 .chicos {
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .lila {

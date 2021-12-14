@@ -8,12 +8,26 @@
         >
             <h2 class="actividades"> Actividades </h2>
 
-            <p >Esta es una pequeña guía para realizar producciones. Son sólo sugerencias para inspirar, pueden modificarlas, transformarlas, mezclarlas, y todo, todo lo que se les ocurra hacer con ellas.
+            <v-img
+                max-height="60vh"
+                src="actividades.jpeg"
+            ></v-img>
+
+
+            <p> Esta es una pequeña guía para realizar producciones. Son sólo sugerencias para inspirar, pueden modificarlas, transformarlas, mezclarlas, y todo, todo lo que se les ocurra hacer con ellas. 
+                <br>
                 No hay ningún resultado al que llegar, sólo disfrutar del proceso y estar atentos a lo que vaya surgiendo en el camino. Es un mapa para que ustedes decidan por dónde ir, si es que necesitan un mapa.
+                <br>
                 Nos encantaría ver sus obras y si nos dan permiso las publicamos. 
+                <br>
                 Si quieren seguir trabajando o buscar inspiración, pueden buscar en nuestras redes más propuestas.
+                <br>
                 ¡Y ahora Manos a la Obra!
             </p>
+
+            <v-img
+                src="actividades2.jpeg"
+            ></v-img>
 
             <v-tabs
                 v-model="tab"

@@ -11,6 +11,10 @@
           contain
           src="MapaLea.png"
         ></v-img>
+        <v-img
+          
+          src="imaginarYcrear.jpeg"
+        ></v-img>
 
         <h2 class="verde">Nuestro Proyecto</h2>
 

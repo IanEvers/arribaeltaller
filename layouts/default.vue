@@ -98,6 +98,11 @@
 </script>
 
 <style>
+h2 {
+  padding: 1rem;
+  font-size: 3rem;
+}
+
 .row {
     justify-content: center;
 }
