@@ -111,6 +111,10 @@ a {
     text-decoration: none;
 }
 
+.theme--light.v-sheet{
+  color: black;
+}
+
 .centro {
     display: contents;
 }
@@ -131,7 +135,7 @@ a {
 }
 
 .imagen {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .v-lazy {

@@ -26,6 +26,10 @@ export default {
   buildModules: [
     '@nuxtjs/vuetify',
   ],
+  css: [
+    // CSS file in the project
+    '@/assets/css/global.css',
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: []

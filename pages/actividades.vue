@@ -3,9 +3,7 @@
         cols="16"
         sm="12"
     >
-        <v-sheet
-            rounded="lg"
-        >
+        <v-sheet>
             <h2 class="actividades"> Actividades </h2>
 
             <v-img
@@ -114,8 +112,7 @@ export default {
                       dibujamos dos líneas paralelas de unos 3, 4 cm. Puede ser en el medio o de costado. Luego abrimos
                       la hoja, y con el dedo empujamos el corte de tal manera que nos quede un asiento. Y ahora vamos a
                       convertirla en una silla que nos guste. Vamos a imaginar dónde está nuestra silla, en un
-                      restaurant, en un living, en un jardín? Donde nos guste! Y lo vamos a dibujar y pintar.
-`,
+                      restaurant, en un living, en un jardín? Donde nos guste! Y lo vamos a dibujar y pintar.`
                 },
                 {
                     nombre:'Arte abstracto',
@@ -135,7 +132,6 @@ export default {
                       Podés hacer una obra por cada canción o varias en una misma hoja.
                       También, si querés, seguilas con otros dibujos y otros materiales.`
                 },
-               
                 {
                     nombre:'Arte abstracto II',
                     texto: ` Podés mirar obras de arte abstracto (Kandinsky, Ad Reinhardt, Miró, etc).
@@ -148,7 +144,6 @@ export default {
                       agregar detalles y pintar, o llenamos cada forma con un color o con una textura visual diferente
                       en cada uno; también podemos transformarlo en un collage y agregar otros materiales.`,
                 },
-            
             ],
         }
     },

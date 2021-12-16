@@ -1,0 +1,28 @@
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: sans-serif;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/NunitoSans-ExtraLight.ttf') format('truetype');
+}
+h2 {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.imagenGrande {
+  margin: 1rem;
+}
+
+.verde {
+  color: green;
+}
+
+p {
+  padding: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+}
