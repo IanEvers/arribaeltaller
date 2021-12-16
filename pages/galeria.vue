@@ -28,7 +28,6 @@ export default {
     data () {
         return {
             items: [
-                
                 '/GALERIA OK/2011 aet 015.jpeg',
                 '/GALERIA OK/20170412_154356.jpeg',
                 '/GALERIA OK/20170504_181358.jpeg',
@@ -63,6 +62,7 @@ export default {
                 '/GALERIA OK/plastilina.jpeg',
                 '/GALERIA OK/retrato.jpeg',
                 '/GALERIA OK/WhatsApp Image 2021-12-06 at 11.20.06 PM.jpeg',
+                '/GALERIA OK/Copia de trabajos 016.jpg',
             ],
         }
     }

@@ -31,35 +31,30 @@
       app
       temporary
     >
-        <div class="linksSidebar">
+      <div class="linksSidebar">
+        <NuxtLink v-for="link in links" :key="link.link" :to="link.link" v-bind:style="{color: link.color}">{{ link.nombre }}</NuxtLink>
+      </div>
 
-          <NuxtLink v-for="link in links" class=""
-        :key="link.link" :to="link.link" v-bind:style="{color: link.color}">{{ link.nombre }}</NuxtLink>      
-        </div>
-      
     </v-navigation-drawer>
    
-    <NuxtLink v-for="link in links" class="d-none d-md-block"
-        :key="link.link" :to="link.link" v-bind:style="{color: link.color}">{{ link.nombre }}</NuxtLink>          
+    <NuxtLink v-for="link in links" class="d-none d-md-block" :key="link.link" :to="link.link" v-bind:style="{color: link.color}">{{ link.nombre }}</NuxtLink>
 
     </v-app-bar>
 
     <v-main class="grey lighten-3">
       <v-container>
         <v-row>
-            <Nuxt />
+          <Nuxt />
         </v-row>
       </v-container>
     </v-main>
-    
-
   </v-app>
 </template>
 
 <script>
   export default {
     data: () => ({
-        drawer: false,
+      drawer: false,
       isActive: false,
       links: [
         {

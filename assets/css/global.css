@@ -6,11 +6,13 @@
   font-display: swap;
   src: url('~assets/fonts/NunitoSans-ExtraLight.ttf') format('truetype');
 }
+
 h2 {
   text-align: center;
   padding-top: 1rem;
   font-family: 'Nunito Sans', sans-serif;
 }
+
 .imagenGrande {
   margin: 1rem;
 }
@@ -20,9 +22,10 @@ h2 {
 }
 
 p {
-  padding: 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 1rem;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-  text-align: justify;
 }
