@@ -43,7 +43,7 @@
             :color="red.color"
             class="color-inherit ms-1"
           >
-            <a target="_blank" :href="red.url">
+            <a target="_blank" :href="red.url" class="inherit">
               <v-icon>mdi-{{red.nombre}}</v-icon>
             </a>
           </v-btn>
@@ -63,7 +63,7 @@
           :color="red.color"
           class="ma-2 d-none d-md-block"
         >
-          <a target="_blank" :href="red.url">
+          <a target="_blank" :href="red.url" class="inherit">
             <v-icon>mdi-{{red.nombre}}</v-icon>
           </a>
         </v-btn>
@@ -158,8 +158,8 @@ a {
   text-decoration: none;
 }
 
-.v-application a {
-  color: inherit;
+.inherit {
+  color: inherit !important;
 }
 
 .theme--light.v-sheet{
