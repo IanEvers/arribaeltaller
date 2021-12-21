@@ -792,6 +792,10 @@ export default {
   justify-content: center;
 }
 
+.verde {
+  color: green;
+}
+
 .ov-none {
   overflow: hidden;
 }
