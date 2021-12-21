@@ -90,7 +90,7 @@
                         </p>
                     </v-card>
                 </v-tab-item>
-           
+
                 <v-tab-item :key="3" >
                     <v-card flat>
                         <p> 
@@ -106,7 +106,7 @@
                         </p>
                     </v-card>
                 </v-tab-item>
-               
+
                 <v-tab-item :key="4" >
                     <v-card flat>
                         <p> 
@@ -196,7 +196,6 @@
                         </p>
                     </v-card>
                 </v-tab-item>
-               
 
             </v-tabs-items>
         </v-sheet>
