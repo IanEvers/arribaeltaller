@@ -13,13 +13,14 @@ h2 {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.v-application a {
+  color: inherit;
+}
+
 .imagenGrande {
   margin: 1rem;
 }
 
-.verde {
-  color: green;
-}
 
 p {
   margin: 0 auto;
