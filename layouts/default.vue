@@ -158,6 +158,10 @@ a {
   text-decoration: none;
 }
 
+.v-application a {
+  color: inherit;
+}
+
 .theme--light.v-sheet{
   color: black;
 }
