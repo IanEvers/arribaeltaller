@@ -706,7 +706,7 @@ export default {
         {
           id: 29,
           dialog: false,
-          color: '#FFAO7A',
+          color: '#FFA07A',
           posicion: {
             top: '20%',
             left: '80%'
@@ -717,25 +717,15 @@ export default {
             titulo:  `Materiales y propuestas`,
             texto: ` A veces un material nos despierta una idea, a veces una idea nos conduce al material.
             <br>
-            <br>
             Trabajamos con los materiales convencionales de la plástica y con otros.
-            <br>
-            <br>
             De a poco los chicos empiezan a ver en los objetos y materiales un disparador para un trabajo suyo o de algunos de sus compañeros. 
-            <br>
-            <br>
             Y “contagian” a su familia que nos proveen de muchos materiales que son muy aprovechados por l@s chic@s, desde azulejos que sobraron de una remodelación, recortes de telas de una mamá diseñadora (o ruedas de bicicletas), etc.
-            <br>
             <br>
             A veces, la idea nos conduce a la búsqueda del material adecuado para expresarnos. Por eso intentamos que haya “de todo” en el taller. Es a partir de la experiencia que los chicos prueban y descubren las posibilidades que se esconden detrás de materiales y herramientas.
             <br>
             <br>
             Las técnicas y materiales se usan en función de lo que se quiere expresar.
-            <br>
-            <br>
             No es la técnica lo que expresa sino las emociones y los sentimientos.
-            <br>
-            <br>
             Quien utiliza los materiales le da forma y significado.
             <br>
             <br>
@@ -745,7 +735,7 @@ export default {
         {
           id: 30,
           dialog: false,
-          color: '#FOAED7',
+          color: '#F0AED7',
           posicion: {
             top: '10%',
             left: '90%'
@@ -808,23 +798,33 @@ export default {
   position: absolute;
 }
 
+i:hover {
+  transform: scale(1.55) !important;
+}
+
 .contenedorEstrellas {
   position: relative;
 }
 
 .floating { 
   animation-name: floating;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
  
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0px, 3px); }
-  100%   { transform: translate(-0, -0px); }   
+  0% { 
+    transform: translate(0,  0px);
+    transform: scale(1.0);
+   }
+  50%  { 
+    transform: translate(0px, 3px); 
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: translate(-0, -0px);
+    transform: scale(1.0); 
+  }
 }
-
 </style>
-
-
