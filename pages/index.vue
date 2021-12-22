@@ -18,7 +18,7 @@
             v-for="tarjeta in tarjetas"
             v-bind:key="tarjeta.id"
             fab
-            small
+            x-small
             :color="tarjeta.color"
             class="ma-2 boton d-none d-md-block elevation-1 floating"
             @click="tarjeta.dialog = !tarjeta.dialog"
