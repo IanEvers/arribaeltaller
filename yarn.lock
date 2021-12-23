@@ -1254,6 +1254,11 @@
     "webpack-node-externals" "^3.0.0"
     "webpackbar" "^4.0.0"
 
+"@nuxtjs/robots@^2.5.0":
+  "integrity" "sha512-z1F3HXb05NiZga8Cuq6k5bbowfJOScPtbSOakip0nege+1aI9pGoajzap8eR5s1qwLXAk9Ts+NcgetoUn5lwrQ=="
+  "resolved" "https://registry.npmjs.org/@nuxtjs/robots/-/robots-2.5.0.tgz"
+  "version" "2.5.0"
+
 "@nuxtjs/vuetify@^1.12.3":
   "integrity" "sha512-6uVL3cfESMB00eVjJTNkyU4jvuPTGPn1yteo7lQTH6v+fxHcPaOgvzVYHIKSHIz1DecuOiB5c9b+YjsRP5+C8A=="
   "resolved" "https://registry.npmjs.org/@nuxtjs/vuetify/-/vuetify-1.12.3.tgz"
