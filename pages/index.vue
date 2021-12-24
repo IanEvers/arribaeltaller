@@ -19,6 +19,7 @@
             v-bind:key="tarjeta.id"
             fab
             x-small
+            :aria-label="tarjeta.contenido.titulo"
             :color="tarjeta.color"
             class="ma-2 boton d-none d-md-block elevation-1 floating"
             @click="tarjeta.dialog = !tarjeta.dialog"
@@ -29,7 +30,7 @@
 
           <v-dialog
             v-for="tarjeta in tarjetas"
-            v-bind:key="tarjeta.titulo"
+            v-bind:key="tarjeta.contenido.titulo"
             v-model="tarjeta.dialog"
             max-width="800px"
           >
@@ -71,7 +72,7 @@
                 <v-btn
                   color="primary"
                   text
-                  
+                  aria-label="cerrar"
                   @click="tarjeta.dialog = false"
                 >
                   Cerrar
@@ -189,8 +190,8 @@ export default {
           dialog: false,
           color: '#C4A433',
           posicion: {
-            top: '80%',
-            left: '50%'
+            top: '13%',
+            left: '35%'
           },
           contenido: {
             fondo: '1 Noche del taller/01 fondo.png',
@@ -217,8 +218,8 @@ export default {
           dialog: false,
           color: '#4056BF',
           posicion: {
-            top: '25%',
-            left: '30%'
+            top: '20%',
+            left: '24%'
           },
           contenido: {
             fondo: '2 Murales/02 fondo.png',
@@ -243,8 +244,8 @@ export default {
           dialog: false,
           color: '#7DCF2A',
           posicion: {
-            top: '20%',
-            left: '50%'
+            top: '25%',
+            left: '52%'
           },
           contenido: {
             fondo: '3 La Terraza/03 fondo.png',
@@ -258,8 +259,8 @@ export default {
           dialog: false,
           color: '#C0C0C0',
           posicion: {
-            top: '60%',
-            left: '80%'
+            top: '35%',
+            left: '32%'
           },
           contenido: {
             fondo: '4 Festejo de los 10 años/04 fondo.png',
@@ -273,8 +274,8 @@ export default {
           dialog: false,
           color: '#05C9F5',
           posicion: {
-            top: '90%',
-            left: '30%'
+            top: '32%',
+            left: '90%'
           },
           contenido: {
             fondo: '5 Mascaras/05 fondo.png',
@@ -291,8 +292,8 @@ export default {
           dialog: false,
           color: '#73EFFB',
           posicion: {
-            top: '15%',
-            left: '60%'
+            top: '30%',
+            left: '5%'
           },
           contenido: {
             fondo: '6 Muestras/06 fondo.png',
@@ -309,8 +310,8 @@ export default {
           dialog: false,
           color: '#0B7015',
           posicion: {
-            top: '20%',
-            left: '40%'
+            top: '45%',
+            left: '43%'
           },
           contenido: {
             fondo: '7 Regalos/07 fondo.png',
@@ -327,8 +328,8 @@ export default {
           dialog: false,
           color: '#FFA004',
           posicion: {
-            top: '45%',
-            left: '85%'
+            top: '55%',
+            left: '14%'
           },
           contenido: {
             fondo: '8 Papeles Florentinos/08 fondo.png',
@@ -345,8 +346,8 @@ export default {
           dialog: false,
           color: '#5C3801',
           posicion: {
-            top: '30%',
-            left: '10%'
+            top: '39%',
+            left: '26%'
           },
           contenido: {
             fondo: '9 Maquetas/09 fondo.png',
@@ -375,8 +376,8 @@ export default {
           dialog: false,
           color: '#800080',
           posicion: {
-            top: '85%',
-            left: '15%'
+            top: '87%',
+            left: '25%'
           },
           contenido: {
             fondo: '10 Juegos y Juguetes/10 fondo.png',
@@ -390,8 +391,8 @@ export default {
           dialog: false,
           color: '#808080',
           posicion: {
-            top: '40%',
-            left: '50%'
+            top: '35%',
+            left: '39%'
           },
           contenido: {
             fondo: '11 Talla en Piedra/11 fondo.png',
@@ -408,8 +409,8 @@ export default {
           dialog: false,
           color: '#FOAED7',
           posicion: {
-            top: '60%',
-            left: '15%'
+            top: '65%',
+            left: '55%'
           },
           contenido: {
             fondo: '12 Cajita de las Ideas/12 fondo.png',
@@ -426,8 +427,8 @@ export default {
           dialog: false,
           color: '#8C6048',
           posicion: {
-            top: '50%',
-            left: '50%'
+            top: '63%',
+            left: '90%'
           },
           contenido: {
             fondo: '13 Arcilla/13 fondo.png',
@@ -447,8 +448,8 @@ export default {
           dialog: false,
           color: '#8ADAA9',
           posicion: {
-            top: '55%',
-            left: '25%'
+            top: '73%',
+            left: '43%'
           },
           contenido: {
             fondo: '14 Collage/14 fondo.png',
@@ -471,8 +472,8 @@ export default {
           dialog: false,
           color: '#FF5733',
           posicion: {
-            top: '63%',
-            left: '70%'
+            top: '15%',
+            left: '80%'
           },
           contenido: {
             fondo: '15 Salidas a Museos/15 fondo.png',
@@ -492,8 +493,8 @@ export default {
           dialog: false,
           color: '#EE3FC7',
           posicion: {
-            top: '25%',
-            left: '62%'
+            top: '26%',
+            left: '37%'
           },
           contenido: {
             fondo: '16 Siluetas/16 fondo.png',
@@ -507,8 +508,8 @@ export default {
           dialog: false,
           color: '#8B1470',
           posicion: {
-            top: '90%',
-            left: '70%'
+            top: '45%',
+            left: '32%'
           },
           contenido: {
             fondo: '17 Movibles articulados/17 fondo.png',
@@ -522,8 +523,8 @@ export default {
           dialog: false,
           color: '#913F02',
           posicion: {
-            top: '31%',
-            left: '75%'
+            top: '80%',
+            left: '61%'
           },
           contenido: {
             fondo: '18 Torno/18 fondo.png',
@@ -540,8 +541,8 @@ export default {
           dialog: false,
           color: '#800000',
           posicion: {
-            top: '80%',
-            left: '29%'
+            top: '72%',
+            left: '52%'
           },
           contenido: {
             fondo: '19 Horno/19 fondo.png',
@@ -555,8 +556,8 @@ export default {
           dialog: false,
           color: '#1A4E90',
           posicion: {
-            top: '83%',
-            left: '75%'
+            top: '70%',
+            left: '88%'
           },
           contenido: {
             fondo: '20 Telar/20 fondo.png',
@@ -570,8 +571,8 @@ export default {
           dialog: false,
           color: '#608394',
           posicion: {
-            top: '90%',
-            left: '90%'
+            top: '77%',
+            left: '47%'
           },
           contenido: {
             fondo: '21 Telas/21 fondo.png',
@@ -591,8 +592,8 @@ export default {
           dialog: false,
           color: '#808000',
           posicion: {
-            top: '60%',
-            left: '55%'
+            top: '50%',
+            left: '83%'
           },
           contenido: {
             fondo: '22 Libro de artistas/22 fondo.png',
@@ -609,8 +610,8 @@ export default {
           dialog: false,
           color: '#F4D03F',
           posicion: {
-            top: '90%',
-            left: '10%'
+            top: '67%',
+            left: '5%'
           },
           contenido: {
             fondo: '23 Azulejos/23 fondo.png',
@@ -627,8 +628,8 @@ export default {
           dialog: false,
           color: '#8B6CA1',
           posicion: {
-            top: '80%',
-            left: '20%'
+            top: '51%',
+            left: '35%'
           },
           contenido: {
             fondo: '24 Biblioteca/24 fondo.png',
@@ -645,8 +646,8 @@ export default {
           dialog: false,
           color: '#A9CCE3',
           posicion: {
-            top: '70%',
-            left: '30%'
+            top: '51%',
+            left: '57%'
           },
           contenido: {
             fondo: '25 Materiales/25 fondo.png',
@@ -663,8 +664,8 @@ export default {
           dialog: false,
           color: '#FF0000',
           posicion: {
-            top: '60%',
-            left: '40%'
+            top: '67%',
+            left: '30%'
           },
           contenido: {
             fondo: '26 Trabajos con Maderas/26 fondo.png',
@@ -678,8 +679,8 @@ export default {
           dialog: false,
           color: '#5A7A5D',
           posicion: {
-            top: '40%',
-            left: '60%'
+            top: '22%',
+            left: '65%'
           },
           contenido: {
             fondo: '27 Pinturas Circulares/27 fondo.png',
@@ -693,8 +694,8 @@ export default {
           dialog: false,
           color: '#000080',
           posicion: {
-            top: '30%',
-            left: '70%'
+            top: '33%',
+            left: '72%'
           },
           contenido: {
             fondo: '28 Zoom/28 fondo.png',
@@ -708,8 +709,8 @@ export default {
           dialog: false,
           color: '#FFA07A',
           posicion: {
-            top: '20%',
-            left: '80%'
+            top: '41%',
+            left: '83%'
           },
           contenido: {
             fondo: '29 Técnicas y propuestas/29 fondo.png',
@@ -737,8 +738,8 @@ export default {
           dialog: false,
           color: '#F0AED7',
           posicion: {
-            top: '10%',
-            left: '90%'
+            top: '20%',
+            left: '70%'
           },
           contenido: {
             fondo: '30 Mueble de cajoncitos/30 fondo.png',

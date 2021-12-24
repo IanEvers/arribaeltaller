@@ -42,6 +42,7 @@
             :key="red.nombre"
             :color="red.color"
             class="color-inherit ms-1"
+            :aria-label="red.nombre"
           >
             <a target="_blank" :href="red.url" class="inherit">
               <v-icon>mdi-{{red.nombre}}</v-icon>
@@ -61,6 +62,7 @@
           v-for="red in redes" 
           :key="red.nombre"
           :color="red.color"
+          :aria-label="red.nombre"
           class="ma-2 d-none d-md-block"
         >
           <a target="_blank" :href="red.url" class="inherit">
@@ -159,6 +161,18 @@
         },
       ]
     }),
+    head() {
+      return {
+        title: 'Taller de Arriba',
+        meta: [
+          {
+            hid: 'Taller de Arriba',
+            name: 'Taller de Arriba',
+            content: 'Taller de Arriba.'
+          }
+        ]
+      }
+    }
   }
 </script>
 
