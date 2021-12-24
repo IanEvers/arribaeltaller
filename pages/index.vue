@@ -407,7 +407,7 @@ export default {
         {
           id: 12,
           dialog: false,
-          color: '#FOAED7',
+          color: '#F0AED7',
           posicion: {
             top: '65%',
             left: '55%'
@@ -715,7 +715,7 @@ export default {
           contenido: {
             fondo: '29 Técnicas y propuestas/29 fondo.png',
             imagen: '29 Técnicas y propuestas/29 foto tarj.png',
-            titulo:  `Materiales y propuestas`,
+            titulo:  `Técnicas y propuestas`,
             texto: ` A veces un material nos despierta una idea, a veces una idea nos conduce al material.
             <br>
             Trabajamos con los materiales convencionales de la plástica y con otros.
