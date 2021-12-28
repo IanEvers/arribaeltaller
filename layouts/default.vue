@@ -163,12 +163,12 @@
     }),
     head() {
       return {
-        title: 'Taller de Arriba',
+        title: 'Arriba el Taller',
         meta: [
           {
-            hid: 'Taller de Arriba',
-            name: 'Taller de Arriba',
-            content: 'Taller de Arriba.'
+            hid: 'Arriba el Taller  ',
+            name: 'Arriba el Taller ',
+            content: 'Arriba el Taller  .'
           }
         ]
       }

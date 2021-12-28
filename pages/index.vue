@@ -19,6 +19,8 @@
             v-bind:key="tarjeta.id"
             fab
             x-small
+            width="25px"
+            height="25px"
             :aria-label="tarjeta.contenido.titulo"
             :color="tarjeta.color"
             class="ma-2 boton d-none d-md-block elevation-1 floating"
@@ -190,8 +192,8 @@ export default {
           dialog: false,
           color: '#C4A433',
           posicion: {
-            top: '13%',
-            left: '35%'
+            top: '35%',
+            left: '13%'
           },
           contenido: {
             fondo: '1 Noche del taller/01 fondo.png',
@@ -738,8 +740,8 @@ export default {
           dialog: false,
           color: '#F0AED7',
           posicion: {
-            top: '20%',
-            left: '70%'
+            top: '70%',
+            left: '20%'
           },
           contenido: {
             fondo: '30 Mueble de cajoncitos/30 fondo.png',
