@@ -343,7 +343,7 @@ export default {
             Cuando estas hojas se secan, cada un@ decide si las usamos para un collage, si buscamos algún dibujo escondido y lo remarcamos con marcador negro, o lo enmarcamos. 
             <br>
             <br>
-            <iframe width="336" height="189" src="https://www.youtube.com/embed/7DIGwIsJ5ZU" SameSite=Lax title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="336" height="189" src="https://www.youtube.com/embed/7DIGwIsJ5ZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             `,
           },
         },
@@ -542,7 +542,7 @@ export default {
             ¿cómo describir esa sonrisa que empieza a dibujarse en las caras de l@s chic@s que prueban esto por primera vez? 
             <br>
             <br>
-            <iframe width="336" height="189" src="https://www.youtube.com/embed/8XeYUTGnUXM" SameSite=Lax title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="336" height="189" src="https://www.youtube.com/embed/8XeYUTGnUXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             `,
           },
         },
@@ -699,7 +699,7 @@ export default {
             texto: `Para este trabajo se necesitan 2 personas, una torneta, hojas, cinta y témperas,(opcional un palito para mezclar o dibujar). Primero pegamos la hoja con cinta en la torneta, luego mientras un@ gira la torneta, otr@ tira diferentes colores de temperas sobre la hoja, si quiere puede utilizar un palito para usar sobre la hoja mientras la torneta gira. Cuando terminan, intercambian la tarea. 
             <br>
             <br>
-            <iframe width="336" height="189" src="https://www.youtube.com/embed/s-_RE6xjFG0" SameSite=Lax title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="336" height="189" src="https://www.youtube.com/embed/s-_RE6xjFG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             `,
           },
         },
