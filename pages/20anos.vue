@@ -27,13 +27,12 @@
                 A Caro por entenderme más allá de las palabras y seguirme en mis delirios.
                 <br>
                 <br>
-                A Gabriel por aceptar este desafío.
+                A Ian por aceptar el desafío de tomar el timón en plena tormenta, y llevarnos a buen puerto.
                 <br>
                 <br>
                 Gracias por ser parte
                 <br>
                 <br>
-
                 Nos queda mucho por descubrir 
                 <br>
                 <br>
