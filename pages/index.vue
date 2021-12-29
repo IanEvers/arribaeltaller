@@ -65,6 +65,8 @@
                     <div class="text--primary lg" v-html="tarjeta.contenido.texto"> </div>
                   </v-card-text>
 
+                  <div class="ml-3" v-if="tarjeta.contenido.video && tarjeta.dialog" v-html="tarjeta.contenido.video"></div>
+
                 </div>
 
               </div>
@@ -342,9 +344,8 @@ export default {
             <br>
             Cuando estas hojas se secan, cada un@ decide si las usamos para un collage, si buscamos algún dibujo escondido y lo remarcamos con marcador negro, o lo enmarcamos. 
             <br>
-            <br>
-            <iframe width="336" height="189" src="https://www.youtube.com/embed/7DIGwIsJ5ZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            `,
+            <br> `,
+            video: `<iframe width="336" height="189" src="https://www.youtube.com/embed/7DIGwIsJ5ZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `,
           },
         },
         {
@@ -541,9 +542,8 @@ export default {
             <br>
             ¿cómo describir esa sonrisa que empieza a dibujarse en las caras de l@s chic@s que prueban esto por primera vez? 
             <br>
-            <br>
-            <iframe width="336" height="189" src="https://www.youtube.com/embed/8XeYUTGnUXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            `,
+            <br>`,
+            video:` <iframe width="336" height="189" src="https://www.youtube.com/embed/8XeYUTGnUXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `,
           },
         },
         {
@@ -697,10 +697,10 @@ export default {
             imagen: '27 Pinturas Circulares/27 foto tarj.png',
             titulo:  `Pinturas Circulares`,
             texto: `Para este trabajo se necesitan 2 personas, una torneta, hojas, cinta y témperas,(opcional un palito para mezclar o dibujar). Primero pegamos la hoja con cinta en la torneta, luego mientras un@ gira la torneta, otr@ tira diferentes colores de temperas sobre la hoja, si quiere puede utilizar un palito para usar sobre la hoja mientras la torneta gira. Cuando terminan, intercambian la tarea. 
-            <br>
-            <br>
-            <iframe width="336" height="189" src="https://www.youtube.com/embed/s-_RE6xjFG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            `,
+              <br>
+              <br>`,
+            video: `<iframe width="336" height="189" src="https://www.youtube.com/embed/s-_RE6xjFG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            ,
           },
         },
         {
@@ -766,18 +766,16 @@ export default {
     }
   },
   mounted() {
-    this.posicionarBotones()
-    window.addEventListener("resize", this.posicionarBotones);
+    
   },
   created() {
   },
   methods: {
-    posicionarBotones() {
-      // let boton = document.getElementsByClassName('boton')
-
-      // boton.style.left = '60%'
-      // boton.style.top =  '0%'
-      // boton.style.display = 'block'
+    video() {
+      console.log('adas')
+      document.getElementsByClassName('video-stream').forEach(video => {
+        video.pause()
+      }); 
     }
   }
 }
