@@ -17,7 +17,7 @@
       ></v-img>
 
       <v-img
-          class="imagen d-none d-md-block"
+          class="imagen d-none d-lg-block"
           contain
           lazy-src="logoLEA.png"
           max-height="150"
@@ -137,6 +137,11 @@
           link: '20anos',
           color: '#808000'
         },
+        {
+          nombre: 'Caja de las ideas',
+          link: 'cajaDeLasIdeas',
+          color: '#002a03'
+        },
       ],
       redes: [
         {
@@ -180,6 +185,13 @@
 h2 {
   padding: 1rem;
   font-size: 3rem;
+}
+
+nav {
+  z-index: 2000 !important;
+}
+nav > * {
+  z-index: 2000 !important;
 }
 
 .row {
