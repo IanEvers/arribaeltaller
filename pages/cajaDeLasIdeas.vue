@@ -24,9 +24,13 @@
     <v-sheet class="flex-column-center">
       <h2 class="caja text-center pa-2">Caja de las ideas</h2>
 
+      <p>
+        Cuando necesites inspiración podés tocar la caja y descubrirás algunas ideas.
+        <br>
+        Podés dibujar, construir, pintar, hacer un collage, todo lo que se te ocurra!
+      </p>
+
       <div class="cajaIdeasContenedor">
-
-
         <div class="cube" ref="cubo" @click="sacarIdea()" :class="{ ideaSacada: idea == 'sacando' }" v-if="idea != 'sacada'">
           <div class="side front">
             <img src="cajaIdeas/texturaCaja.png" alt="">
@@ -38,9 +42,9 @@
           <div class="side bottom"> <img src="cajaIdeas/texturaCaja.png" alt=""></div>
         </div>
 
-        <div v-else>
-          <h2 class="ideaTexto">idea: idea numero {{Math.floor(Math.random() * 1000)}}</h2>
-
+        <div v-else class="ideaTextoContenedor">
+          <h2 class="ideaTexto">Idea: {{ this.ideas[Math.floor(Math.random() * (this.ideas.length))] }}</h2>
+          <button class="otraIdea" @click="reset()"> Otra Idea </button>
         </div>
       </div>
 
@@ -60,7 +64,35 @@ export default {
     return {
       idea: 'no sacada',
       ideas: [
-        'idea 1'
+        'idea 1',
+        'Un florero con flores raras',
+        'Una playa',
+        'Abajo del mar',
+        'Abajo de la tierra',
+        'El espacio',
+        'Un cohete a la luna ',
+        'Una fiesta',
+        'Un retrato de tu mejor amig@',
+        'Un retrato de tu mascota o de alguna mascota que conozcas',
+        'Un bosque',
+        'Una ciudad',
+        'Alguien haciendo algún deporte',
+        'Una huerta',
+        'Una habitación',
+        'La cocina de tu casa, o la que quieras',
+        'Un tren',
+        'La noche',
+        'Las montañas',
+        'El reino del revés ( podés escuchar la canción de maría elena walsh) ',
+        'Un animal de cuatro patas',
+        'La selva',
+        'Familia de animales',
+        'Dos amig@s',
+        'Tu libro preferido',
+        'El titulo de una canción',
+        'Una historieta inventada por vos',
+        'Un invento',
+        'Un juego de mesa',
       ]
     }
   },
@@ -69,14 +101,15 @@ export default {
    
     sacarIdea() {
       this.idea = 'sacando'
-
       addEventListener("webkitAnimationEnd", this.myEndFunction);
     },
 
     myEndFunction( ) {
-      console.log('end')
       this.idea = 'sacada'
+    },
 
+    reset() {
+      this.idea = 'no sacada'
     }
 
   }
@@ -116,6 +149,12 @@ export default {
   z-index: 1;
 }
 
+.ideaTextoContenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* The child element, with 3D tranforms preserved */
 .cube {
   position: relative;
@@ -126,7 +165,16 @@ export default {
   
 }
 
-
+.otraIdea {
+  background-color: #002a03;
+  position: relative;
+  color: white;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 1rem;
+  cursor: pointer;
+  z-index: 2000;
+}
 
 img {
   width: 200px;
@@ -215,7 +263,7 @@ img {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 .confetti-piece {
     position: absolute;
